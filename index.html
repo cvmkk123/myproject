@@ -22,8 +22,23 @@
             <li>Entertainment</li>
             <li>Accessories</li>
             <li>Support</li>
-            <li>🔍</li>
-            <li>🛍️</li>
+            <li>
+                <a href="#" class="search-icon-link" aria-label="Search">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="bag-icon-link" aria-label="Shopping Bag">
+                    <svg class="bag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -32,7 +47,7 @@
     </div>
 
     <div class="hero">
-        <div class="left" style="margin-left: 40px;font-size: 80px;">Bapple Store</div>
+        <div class="left" style="margin-left: 40px;font-size: 75px;">Bapple Store</div>
         <div class="right">
             <p style="margin-right: 40px;font-size: 25px;font-weight: bold;">The best way to buy the <br> products you love.</p>
             <br>
@@ -42,45 +57,73 @@
         </div>
     </div>
 
-    <div class="products-wrapper">
+    <div class="products-wrapper" style="margin-left: 40px;background-color: #f5f5f7 !important;">
         <div class="products">
-            <div class="item"><img src="https://cdn.mos.cms.futurecdn.net/Jd8jysgRQcBzQFrQj2ZjbT.jpg" style="margin-left: 120px;"><p style="margin-left: 120px;">Mac</p></div>
-            <div class="item"><img src="https://www.ghacks.net/wp-content/uploads/2023/09/reasons-to-buy-the-iphone-15.jpg" style="height: 70px;"><p>iPhone</p></div>
-            <div class="item"><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-finish-select-202503-blue-wifi_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=80&.v=aHYyeWZ6TVBzTWw5WlZ2bFJCZno2dUprQ2lFRFY2NHBMdklFNCtsRUpxdXRpY0gzeTdwdlpIKzg4NWM0UWFDYzhPR21TUjBtZytxMXNhbXdjN2ZpMXEwekI5ZWpRa0o2WWdVYzdzTUdBdFZyZS9CYmFGbEVub0pLb3hjdTIzaTk" style="height: 70px;"><p>iPad</p></div>
-            <div class="item"><img src="https://www.apple.com/assets-www/en_IN/watch1/og/watch_og_c64ec6c67.png" style="height: 70px;"><p>Apple Watch</p></div>
-            <div class="item"><img src="https://backend.paiinternational.in/media/images/2_a7YTYOZ.webp" style="height: 60px;"><p>AirPods</p></div>
-            <div class="item"><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airtag-unselect-202601_GEO_IN_FMT_WHH?wid=2000&hei=2000" style="height: 60px;"><p>AirTag</p></div>
-            <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmSl_0T9oHMc2rvk-JBvcsgNeyrYFuopvp7_bvMHo8Q61Wb6Ifh88SxeD&s=10" style="height: 60px;"><p>Apple TV 4K</p></div>
-            <div class="item"><img src="https://www.apple.com/newsroom/images/product/homepod/standard/Apple_HomePodmini_hero_10192021_big.jpg.slideshow-xlarge_2x.jpg" style="height: 60px;"><p>HomePod</p></div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202603?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4V2duSGVkdTVncGZYc0RnS1paU3IySCsrUlZaSVRoWVYzU0Qra0FoTmUwNi9QNXlFS1hSa1R2UkcrWjFiN21qeHJmM2dNTnRBQ1R4cGxoYkFsaEFKa1c1K1k1Y2ZhL2RsT3JqdUh6czBxZU0&traceId=1" alt="Mac">
+                <p>Mac</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202609?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXMWdGVG1nbG0xL1p6dm9DRUFPZ0dweDVoZlhhY1p4QWdsTjFNaGRHM3FYWWUzNFVlZmYxaVpiTW5tRlBYR0RFVklTTzF3TXlWM0VQVDViZjNveGdyVU9lTTB1dFozcWlUMzVoT1cvanh0Tmw&traceId=1" alt="iPhone">
+                <p>iPhone</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eGtqQUNSY05Zb293eGJHTE9hUWczcnVqTnpaVXRhU3dOZ1ZOcTU5bHVTTkNFYWxxelhUNTl3NnJFTGlRNFh3azE&traceId=1" alt="iPad">
+                <p>iPad</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202609_GEO_IN?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkeE9WMkZMMjB1Njd1c1lXRUh5b1BXRHZGQmhUaHlPN016cFdzNFJtZThkQ01DTS9QV2xKYXo2bE9ETG5WUkpWcFBvZUk3ZVZqK0FuWVJRM3FKNkVncGQxTWwzdndZZDdTU0tSYVliemp3UWQ&traceId=1" alt="Apple Watch">
+                <p>Apple Watch</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202509?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yMDhFUStvWHB3SDlDa3VrdUZORWRqeld1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSEVaKytVOXBFNXhUYkFYeU1LbHRXRDJCblJUU25lOTBVc1pJNFhQcHA5TlQ&traceId=1" alt="AirPods">
+                <p>AirPods</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202601_GEO_IN?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yL1FqZ2pobDV2bDUyWU1XVmNnMmx3UUdvUzdNVnRJWFZUbkZkSEFxU1M1YUJJRzhncjJ5NEdySDdMb0tkNHQxWFYxWFVnbS9XYm1BUnlMbURiRlUzRk1BS3RUZUtRRGswM2JWZFNMWlhzMm4&traceId=1" alt="AirTag">
+                <p>AirTag</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSERxOTBFMThSYVlJdVFBV2ZnQ1NBeVcwck5OSHpVbkpKdUFBSHBmZzRLOFM&traceId=1" alt="">
+                <p>AppleTv 4K</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSE9Ob1JlMThuYVRLV29ucnpoS2dURTl4VGhFTjdSUWRqcm1rRTUvVTh5Zmk&traceId=1" alt="HomePod">
+                <p>HomePod</p>
+            </div>
+            <div class="item">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-accessories-nav-202609?wid=240&hei=156&fmt=webp-alpha&qlt=90&.v=QnhsNk96S0o4R1dkN2FveStNM1hwNzZGMHVrNGw2NTM5Vmk2bHZzMXQ3andmemN3dmNHVFJjenRQYk1lUFpSRFUvQk80eDZ3VFAzNXRKWVBtSG1tRktvSHphdyszeHBObUNiNWtRSFBzM1k4aWJmZ0ZqclZySWJJMFljQnNqR1M&traceId=1" alt="Accessories">
+                <p>Accessories</p>
+            </div>
         </div>
     </div>
 
-    <h1 class="title">
+    <h1 class="title" style="margin-left: 40px;">
         <span class="black">The latest.</span>
         <span class="grey">Take a look at what's new right now.</span>
     </h1>
-    <div class="slider-container" style="margin-left: 90px;">
-        <div class="cards">
-            <div class="card">
+    <div class="slider-container" style="margin-left: 120px;">
+        <div class="cards" >
+            <div class="card" >
                 <div class="card-header text-white">
-                    <span class="card-subtitle">IPHONE 18 PRO</span>
-                    <span class="card-main-title">All out Pro.</span>
-                    <span class="card-price">From ₹134900.00</span>
+                    <span class="card-subtitle">New</span>
+                    <span class="card-main-title">IPHONE 18 PRO</span>
+                    <span class="card-price">From ₹164900.00</span>
                 </div>
                 <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-18-pro-202609?wid=800&hei=1000&fmt=webp&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXSWQybG1sZ1oxVnEyWjA5KzltU01ZTFNab1lJcUZwSFVRK1htYlNmZUtPTFJ2R3NEUGt3Q2tTUTNWU09neHFkdWRUL1Azd1lsYk5RbEsxZXhvbThSV3VXS3B5dFRDdHdOWGF6ZzVmZHdiRWc&traceId=1">
             </div>
 
             <div class="card">
                 <div class="card-header text-black">
-                    <span class="card-subtitle">iPhone Duo</span>
-                    <span class="card-main-title">Hello , hello.</span>
+                    <span class="card-subtitle">New</span>
+                    <span class="card-main-title">iPhone Duo.</span>
                     <span class="card-price">From ₹299900.00</span>
                 </div>
                 <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-duo-202609_GEO_IN?wid=800&hei=1000&fmt=webp&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXTmRieWJxSUI5TWh3VExiQnFCdzRFUVIzWjZtanZvZXBzWDFVU2JjN3Z3cXBxK0ZBNmxGbmUyUFZlUkRMaDBrbFIrM1V0MXQ3L01IeDRJOXlOYjZtNC9JTVpqRTIzSGM4czgvT0dWYlpqZnY&traceId=1">
             </div>
 
             <div class="card">
-                <div class="card-header text-black">
+                <div class="card-header text-white">
                     <span class="card-subtitle">New</span>
                     <span class="card-main-title">Apple Watch Series 12</span>
                     <span class="card-price">From ₹56900.00</span>
@@ -98,11 +141,11 @@
         </div>
     </div>
 
-    <h1 class="title">
+    <h1 class="title" style="margin-left: 40px;">
         <span class="black">Help is here.</span>
         <span class="grey">Whenever and however you need it.</span>
     </h1>
-    <div class="slider-container" style="margin-left: 90px;">
+    <div class="slider-container" style="margin-left: 120px;">
         <div class="cards">
             <div class="card help-card text-black">
                 <div class="card-header">
@@ -137,11 +180,11 @@
         </div>
     </div>
 
-    <h1 class="title">
+    <h1 class="title" style="margin-left: 40px;">
         <span class="black">Accessories.</span>
         <span class="grey">Essentials that pair perfectly with your favourite devices.</span>
     </h1>
-    <div class="slider-container" style="margin-left: 90px;">
+    <div class="slider-container" style="margin-left: 120px;">
         <div class="cards">
             <div class="card accessory-card text-black">
                 <div class="card-header">
@@ -196,12 +239,12 @@
             </div>
         </div>
     </div>
-    <h1 class="title">
+    <h1 class="title" style="margin-left: 40px;">
     <span class="black">Loud and clear.</span>
     <span class="grey">Unparalleled choices for rich, high-quality sound.</span>
 </h1>
 
-<div class="slider-wrapper-v2" style="margin-left: 90px;">
+<div class="slider-wrapper-v2" style="margin-left: 120px;">
     <a href="#airpods-card-1" class="slide-btn-v2 prev-btn-v2">‹</a>
     <a href="#airpods-card-4" class="slide-btn-v2 next-btn-v2">›</a>
 <div class="slider-container">
@@ -248,11 +291,11 @@
 </div>
 </div>
 
-<h1 class="title">
+<h1 class="title" style="margin-left: 40px;">
     <span class="black">The Apple experience.</span>
     <span class="grey">Do even more with Apple products and services.</span>
 </h1>
-<div class="slider-container" style="margin-left: 90px;">
+<div class="slider-container" style="margin-left: 120px;">
 <div class="cards" style="margin-left: 90px;">
 
     <div class="card text-black">
