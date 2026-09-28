@@ -157,7 +157,7 @@ body {
    Products Navigation
    ========================================= */
 .products-wrapper {
-    padding: 30px 100px 10px;
+    padding: 50px 100px 10px;
     background-color: #f5f5f7; /* Apple's signature light gray background for seamless blending */
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
