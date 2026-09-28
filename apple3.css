@@ -13,8 +13,48 @@ body {
     color: #1d1d1f;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden; /* Stops the whole page from shifting or scrolling sideways */
+    margin: 0;
+    padding: 0;
+
+}
+.bag-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+.bag-icon {
+    width: 18px; /* Adjust size to match your nav icons */
+    height: 18px;
+    color: #1d1d1f; /* Apple's dark UI color */
+    transition: opacity 0.2s ease;
+}
+
+.bag-icon-link:hover .bag-icon {
+    opacity: 0.6; /* Fades softly on hover like real e-commerce stores */
+}
+
+.search-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 18px; /* Adjust size to fit your nav bar */
+    height: 18px;
+    color: #1d1d1f; /* Apple's dark text color */
+    transition: opacity 0.2s ease;
+}
+
+.search-icon-link:hover .search-icon {
+    opacity: 0.6; /* Fades slightly on hover like Apple/Amazon */
+}
 /* =========================================
    Navigation Bar
    ========================================= */
@@ -27,7 +67,7 @@ body {
 
 .navbar {
     display: flex;
-    gap: 32px;
+    gap: 42px;
     align-items: center;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.8);
@@ -55,7 +95,7 @@ body {
 .offer {
     text-align: center;
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 16px 20px;
     background-color: #ffffff;
     border-bottom: 1px solid #d2d2d7;
     color: #1d1d1f;
@@ -95,12 +135,34 @@ body {
 }
 
 /* =========================================
+  Image Container   
+========================================= */
+   
+.image-container {
+    width: 110px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* This removes the white background and blends it seamlessly! */
+}
+/* =========================================
    Products Navigation
    ========================================= */
 .products-wrapper {
-    padding: 20px 90px 40px;
+    padding: 30px 100px 10px;
+    background-color: #f5f5f7; /* Apple's signature light gray background for seamless blending */
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .products-wrapper::-webkit-scrollbar {
@@ -109,8 +171,9 @@ body {
 
 .products {
     display: flex;
-    gap: 35px;
+    gap: 40px;
     align-items: flex-end;
+    flex-wrap: nowrap; /* Forces items into one clean horizontal row */
 }
 
 .item {
@@ -118,8 +181,8 @@ body {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.3s ease
-    border-radius:5px;
+    flex-shrink: 0; /* Prevents the icons from getting squished when scrolling */
+    transition: transform 0.3s ease;
 }
 
 .item:hover {
@@ -127,17 +190,21 @@ body {
 }
 
 .item img {
-    height: 60px;
+    height: 75px;
+    width: auto;
     object-fit: contain;
     margin-bottom: 12px;
+    mix-blend-mode: darken; /* Changes blending math to absorb the off-white box */
+    filter: contrast(102%);
 }
 
 .item p {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #1d1d1f;
+    white-space: nowrap; /* Prevents text labels from breaking into two lines */
 }
-
 /* =========================================
    Section Titles
    ========================================= */
@@ -213,10 +280,21 @@ body {
     flex-direction: column;
 }
 
-.text-white .card-subtitle, 
-.text-white .card-main-title, 
-.text-white .card-price {
+.card-header.text-white .card-subtitle, 
+.card-header.text-white .card-main-title, 
+.card-header.text-white .card-price {
     color: #ffffff;
+}
+
+.card-header.text-white span {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card-header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
 }
 
 .card-subtitle {
